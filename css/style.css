@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&GENRAL
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: ease-in-out 0.3s;
+    scroll-behavior: smooth;
+}
+:root {
+    /* COLORES PRINCIPALES */
+    --verde1: #225340;
+    --verde2: #81be44;
+    --naranja: #FF7626;
+    --naranja-hover: #D95718;
+    --crema: #F1E9D8;
+
+    /* COLORES NEUTROS */
+    --azul: #171F1D;
+    --blanco: #FAFAF5;
+    --gris: #A6AEA5;
+
+    /* FONDOS */
+    --fondo-claro: #FAFAF5;
+    --fondo-oscuro: #183C2E;
+
+    --beba: "Bebas Neue", sans-serif;
+    --oswald: "Oswald", sans-serif;
+    --monse: "Montserrat", sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+section {
+    padding: 60px 0;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FUENTES 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+h2 {
+    font-family: var(--oswald);
+    font-size: 40px;
+}
+h1 {
+    font-size: 60px;
+    font-family: var(--beba);
+    text-align: center;
+    color: var(--crema);
+}
+h1 span {
+    color: var(--naranja);
+}
+/*!NAV*/
+.navItem a {
+    font-family: var(--monse);
+    color: var(--crema);
+    font-size: 16px;
+}
+.navItem a:hover {
+    color: var(--naranja);
+    font-weight: bold;
+}
+/*!BANNER*/
+.pBanner {
+    font-family: var(--monse);
+    font-size: 18px;
+    color: var(--crema);
+    text-align: center;
+    font-weight: 400;
+}
+/*!NOSOTROS*/
+.h2Oscuro {
+    color: var(--verde1);
+}
+.pOscuro {
+    font-family: var(--monse);
+    font-size: 18px;
+    color: var(--azul);
+}
+/*!COMPETENCIA*/
+.h2Claro {
+    color: var(--verde2
+    );
+}
+.pClaro {
+    font-family: var(--monse);
+    font-size: 18px;
+    color: var(--crema);
+}
+/*!ETAPAS*/
+.descripcionEtapa {
+    font-family: var(--monse);
+    font-size: 18px;
+    color: var(--crema);
+}
+.tiryuloCardE {
+    font-family: var(--oswald);
+    font-size: 25px;
+    color: var(--naranja);
+    font-weight: bold;
+}
+/*!PAQUETES*/
+.nivelPClaro{
+    color: #068302;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--monse);
+}
+.nivelPMedio {
+    color: #11700e;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--monse);
+}
+.nivelPOscuro {
+    color: #0d5e0a;
+    font-family: var(--monse);
+    font-weight: bold;
+    font-size: 14px;
+}
+.nombreP {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-family: var(--oswald);
+    color: var(--verde1);
+}
+.precioDestacado{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--naranja);
+    margin-bottom: 16px;
+    line-height: 1;
+    font-family: var(--monse);
+}
+.precioDestacado span {
+    font-size: 13px;
+    color: var(--verde1);
+    font-family: var(--monse);
+    font-weight: 500;
+}
+.detalles{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--azul);
+    font-family: var(--monse);
+}
+.punto {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--naranja);
+    flex-shrink: 0;
+    font-size: 16px;
+}
+.fecha {
+    font-size: 1
+    2px;
+    color: var(--naranja);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-family: var(--monse);
+    font-weight: bold;
+}
+/*!UNIFORME*/
+.pDestacada {
+    font-family: var(--monse);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--naranja);
+}
+/*!FOOTER*/
+.footerMarca p {
+    max-width: 300px;
+    line-height: 1.7;
+    color: var(--gris);
+    font-family: var(--monse);
+    font-size: 16px;
+    padding-top: 20px;
+}
+.footerLinks h3,
+.footerRedes h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: var(--naranja);
+    font-family: var(--oswald);
+}
+.footerLinks a {
+    color: var(--gris);
+    font-family: var(--monse);
+    font-size: 18px;
+    transition: .3s;
+}
+.footerLinks a:hover {
+    color: var(--naranja);
+    font-weight: bold;
+    transform: translateX(5px);
+}
+.footerRedes p {
+    color: var(--gris);
+    font-family: var(--monse);
+    font-size: 14px;
+}
+.footerBottom {
+    border-top: 1px solid #ffffff30;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: var(--naranja);
+    font-family: var(--monse);
+    font-size: 13px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&ETIQUETAS
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.etiqueta {
+    background-color: var(--naranja);
+    padding: 15px;
+    border-radius: 50px;
+    font-family: var(--monse);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto;
+    width: auto;
+    color: var(--azul);
+}
+.etiquetaO {
+    background-color: var(--naranja);
+    padding: 15px 10px;
+    border-radius: 50px;
+    font-family: var(--monse);
+    font-size: 16px;
+    color: var(--crema);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&BTN
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.btn {
+    font-family: var(--monse);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.btn1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    isolation: isolate;
+    color: var(--naranja);
+    border: 2px solid var(--naranja);
+    padding: 10px 20px;
+    transition: color 0.4s ease;
+}
+.btn1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--naranja);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.45s ease;
+    z-index: -1;
+}
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+.btn1:hover {
+    color: var(--azul);
+}
+.btn2 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    isolation: isolate;
+    padding: 10px 20px;
+    background-color: var(--naranja);
+    color: var(--azul);
+    border: 2px solid var(--naranja);
+    transition: color 0.4s ease;
+}
+.btn2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--azul);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+.btn2:hover::before {
+    transform: scaleX(1);
+}
+.btn2:hover {
+    color: var(--naranja);
+    border-color: var(--azul);
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&ICONOS
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*!NOSOTROS*/
+.flecha {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--naranja);
+    color: var(--azul);
+    padding: 5px;
+}
+.flecha i {
+    font-size: 20px;
+    color: var(--azul);
+}
+/*!FOOTER*/
+.redes a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff50;
+    border-radius: 50%;
+    color: var(--blanco);
+    background-color: var(--naranja);
+    font-size: 21px;
+    transition: .3s;
+}
+.redes a:hover {
+    background-color: var(--naranja-hover);
+    color: var(--azul);
+    border-color: var(--naranja);
+    transform: translateY(-5px);
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&DIVISOR
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.divisor-montanas {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    line-height: 0;
+    background-color: var(--fondo-claro);
+}
+.divisor-montanas svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.colorOscuro{
+    background-color: var(--fondo-oscuro);
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&NAVEGACION
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.nav {
+    background-color: var(--azul);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+}
+.containerNav {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.opcionNavega {
+    display: flex;
+    gap: 30px;
+}
+.closeIcon {
+    display: none;
+}
+.closeIcon i {
+    font-size: 30px;
+    background-color: var(--naranja);
+    color: var(--azul);
+    border-radius: 100%;
+}
+.navBar {
+    display: none;
+}
+.navBar i {
+    font-size: 30px;
+    color: var(--naranja);
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&HEADER
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.indexH {
+    background: url(../img/HERO\ SECTION\ PNG.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.containerHeaderI {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.textos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.btnHeader {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&NOSOTROS
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.nosotros {
+    background-color: var(--fondo-claro);
+}
+.nosotros .etiqueta {
+    width: 200px;
+    margin: 0;
+}
+.textoN {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+.textoN a {
+    width: 150px;
+}
+.textoImgNosotros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.carrusel {
+    width: 40%;
+    position: relative;
+}
+.contenedorCarrusel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.imagenesCarrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.imagenesCarrusel img {
+    min-width: 100%;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+.anterior {
+    left: 15px;
+    bottom: 10px;
+}
+.siguiente {
+    right: 15px;
+    bottom: 10px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&COMPETENCIA
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.competencia {
+    background-color: var(--fondo-oscuro);
+}
+.imgTexto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grupoImg {
+    display: flex;
+    gap: 25px;
+}
+.grupoImg img {
+    filter: grayscale(100);
+}
+.grupoImg img:hover {
+    filter: grayscale(0);
+}
+.parejaIMG {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+.textoCom {
+    width: 50%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: end;
+}
+.textoCom .etiquetaO {
+    width: 200px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&Etapas
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.etapasS {
+    background-color: var(--fondo-claro);
+    position: relative;
+}
+.etapas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 40px;
+}
+.coyote {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.quetzal {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+.textoE {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.textoE a {
+    width: 200px;
+    margin: 0 auto;
+}
+.cardEtapa {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cardEtapa:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.22);
+}
+.footerCardE {
+    background-color: var(--verde1);
+    text-align: center;
+    padding: 20px 15px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&Paquetes
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.paquetes {
+    background-color: var(--fondo-oscuro);
+}
+.textoP {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.textoP .etiquetaO {
+    width: 250px;
+    margin: 0 auto;
+}
+.cardsPaquetes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 80px;
+    padding-top: 40px;
+}
+.cardPaquete {
+    background: var(--fondo-claro);
+    border: 1px solid rgba(11, 160, 24, 0.39);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    width: 420px;
+    flex-direction: column;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.cardPaquete:hover {
+    transform: translateY(-6px);
+    border-color: rgba(58, 245, 11, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.cardPaqueteIMG {
+    overflow: hidden;
+}
+.cardPaqueteIMG2 {
+    width: 100%;
+    height: 280px;
+    display: block;
+    filter: grayscale(20%);
+    transition: filter 0.4s, transform 0.4s;
+    object-fit: cover;
+}
+.cardPaquete:hover .cardPaqueteIMG2 {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+.infoCard {
+    padding: 22px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.informacionPaq {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+.infoCard a {
+    text-align: center;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&UNIFORME
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.uniformes {
+    background-color: var(--fondo-claro);
+    position: relative;
+}
+.textoImgUnifor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textoU {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+.textoU .etiqueta {
+    margin: 0;
+}
+.imagencamisa {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagencamisa img {
+    width: 100%;
+}
+.bici {
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    height: auto;
+    right: 60%;
+}
+.colibri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&PREMIOS
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.premios{
+    background-color: var(--fondo-oscuro);
+}
+.contendorPremiosImg{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.contendorPremiosImg img{
+    border-radius: 7px;
+}
+.imganen1opremio{
+    height: 530px;
+}
+.parejaImgPremio{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.textosPremios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+    gap: 20px;
+}
+.textosPremios .etiquetaO{
+    width: 180px;
+    margin: 0 auto;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FAN ZONE
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.fanZone{
+    background-color: var(--fondo-claro);
+}
+.imgTextosFZ{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+.imagenesFZ{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.imagenesFZ img{
+    width: 600px;
+    height: 300px;
+}
+.textosFZ{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: end;
+}
+.textosFZ .etiqueta {
+    width: 250px;
+    text-align: center;
+}
+.textosFZ a{
+    text-align: center;
+    width: 233px;
+}
+.botonesFZ{
+    display: flex;
+    justify-content: end;
+}
+.etiquetFZ{
+    display: flex;
+    justify-content: end;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&CONTACTO
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.contacto{
+    background-color: var(--fondo-oscuro);
+    position: relative;
+}
+.textoC{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.textoC .etiquetaO{
+    width: 250px;
+    margin: 0 auto;
+}
+.formularioIndex {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 40px;
+}
+.formularioIndex button{
+    width: 250px;
+    margin: 0 auto;
+}
+.filaFormulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    text-align: center;
+}
+.label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--verde2);
+    font-family: var(--monse);
+    font-weight: bold;
+    text-align: center;
+}
+.input,
+.textarea {
+    background: rgba(20, 43, 59, 0.52);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: var(--gris);
+    font-size: 13px;
+    font-family: var(--monse);
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s, background 0.2s;
+}
+.input::placeholder,
+.textarea::placeholder {
+    color:var(--blanco);
+}
+.input:focus,
+.textarea:focus {
+    border-color:#5DB9AD;
+    background: rgba(255, 255, 255, 0.06);
+}
+.textarea {
+    resize: none;
+    height: 240px;
+    width: 80%;
+}
+.labelInpuT{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    padding-top: 40px;
+}
+.quetzal1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.coyote1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FOOTER
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.footer {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 60px 0 20px;
+}
+.footerTop {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 45px;
+    padding-bottom: 45px;
+}
+.footerLinks,
+.footerRedes {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.redes {
+    display: flex;
+    gap: 12px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .footerTop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerTop {
+        grid-template-columns: 1fr;
+    }
+}
