@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 /*
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-&GENRAL
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*&GENRAL
+*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 */
 * {
     padding: 0;
@@ -16,6 +16,7 @@
     transition: ease-in-out 0.3s;
     scroll-behavior: smooth;
 }
+
 :root {
     /* COLORES PRINCIPALES */
     --verde1: #225340;
@@ -37,13 +38,16 @@
     --oswald: "Oswald", sans-serif;
     --monse: "Montserrat", sans-serif;
 }
+
 .container {
     width: 90%;
     margin: 0 auto;
 }
+
 section {
     padding: 60px 0;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -55,25 +59,57 @@ h2 {
     font-family: var(--oswald);
     font-size: 40px;
 }
+
 h1 {
     font-size: 60px;
     font-family: var(--beba);
     text-align: center;
     color: var(--crema);
 }
+
 h1 span {
     color: var(--naranja);
 }
+
+.h2Oscuro {
+    color: var(--verde1);
+}
+
+.pOscuro {
+    font-family: var(--monse);
+    font-size: 18px;
+    color: var(--azul);
+}
+
+.h2Claro {
+    color: var(--verde2);
+}
+
+.pClaro {
+    font-family: var(--monse);
+    font-size: 18px;
+    color: var(--crema);
+}
+
 /*!NAV*/
 .navItem a {
     font-family: var(--monse);
     color: var(--crema);
     font-size: 16px;
 }
+
 .navItem a:hover {
     color: var(--naranja);
     font-weight: bold;
 }
+
+/*
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&INDEX.HTML 
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
 /*!BANNER*/
 .pBanner {
     font-family: var(--monse);
@@ -82,56 +118,43 @@ h1 span {
     text-align: center;
     font-weight: 400;
 }
-/*!NOSOTROS*/
-.h2Oscuro {
-    color: var(--verde1);
-}
-.pOscuro {
-    font-family: var(--monse);
-    font-size: 18px;
-    color: var(--azul);
-}
-/*!COMPETENCIA*/
-.h2Claro {
-    color: var(--verde2
-    );
-}
-.pClaro {
-    font-family: var(--monse);
-    font-size: 18px;
-    color: var(--crema);
-}
+
 /*!ETAPAS*/
 .descripcionEtapa {
     font-family: var(--monse);
     font-size: 18px;
     color: var(--crema);
 }
+
 .tiryuloCardE {
     font-family: var(--oswald);
     font-size: 25px;
     color: var(--naranja);
     font-weight: bold;
 }
+
 /*!PAQUETES*/
-.nivelPClaro{
+.nivelPClaro {
     color: #068302;
     font-weight: bold;
     font-size: 14px;
     font-family: var(--monse);
 }
+
 .nivelPMedio {
     color: #11700e;
     font-weight: bold;
     font-size: 14px;
     font-family: var(--monse);
 }
+
 .nivelPOscuro {
     color: #0d5e0a;
     font-family: var(--monse);
     font-weight: bold;
     font-size: 14px;
 }
+
 .nombreP {
     font-size: 30px;
     font-weight: 500;
@@ -139,7 +162,8 @@ h1 span {
     font-family: var(--oswald);
     color: var(--verde1);
 }
-.precioDestacado{
+
+.precioDestacado {
     font-size: 28px;
     font-weight: bold;
     color: var(--naranja);
@@ -147,13 +171,15 @@ h1 span {
     line-height: 1;
     font-family: var(--monse);
 }
+
 .precioDestacado span {
     font-size: 13px;
     color: var(--verde1);
     font-family: var(--monse);
     font-weight: 500;
 }
-.detalles{
+
+.detalles {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -161,6 +187,7 @@ h1 span {
     color: var(--azul);
     font-family: var(--monse);
 }
+
 .punto {
     width: 5px;
     height: 5px;
@@ -169,9 +196,9 @@ h1 span {
     flex-shrink: 0;
     font-size: 16px;
 }
+
 .fecha {
-    font-size: 1
-    2px;
+    font-size: 1 2px;
     color: var(--naranja);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -179,6 +206,7 @@ h1 span {
     font-family: var(--monse);
     font-weight: bold;
 }
+
 /*!UNIFORME*/
 .pDestacada {
     font-family: var(--monse);
@@ -186,6 +214,7 @@ h1 span {
     font-weight: 600;
     color: var(--naranja);
 }
+
 /*!FOOTER*/
 .footerMarca p {
     max-width: 300px;
@@ -195,6 +224,7 @@ h1 span {
     font-size: 16px;
     padding-top: 20px;
 }
+
 .footerLinks h3,
 .footerRedes h3 {
     font-size: 17px;
@@ -202,22 +232,26 @@ h1 span {
     color: var(--naranja);
     font-family: var(--oswald);
 }
+
 .footerLinks a {
     color: var(--gris);
     font-family: var(--monse);
     font-size: 18px;
     transition: .3s;
 }
+
 .footerLinks a:hover {
     color: var(--naranja);
     font-weight: bold;
     transform: translateX(5px);
 }
+
 .footerRedes p {
     color: var(--gris);
     font-family: var(--monse);
     font-size: 14px;
 }
+
 .footerBottom {
     border-top: 1px solid #ffffff30;
     padding-top: 20px;
@@ -228,6 +262,7 @@ h1 span {
     font-family: var(--monse);
     font-size: 13px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -235,17 +270,6 @@ h1 span {
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 */
-.etiqueta {
-    background-color: var(--naranja);
-    padding: 15px;
-    border-radius: 50px;
-    font-family: var(--monse);
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 auto;
-    width: auto;
-    color: var(--azul);
-}
 .etiquetaO {
     background-color: var(--naranja);
     padding: 15px 10px;
@@ -258,6 +282,7 @@ h1 span {
     justify-content: center;
     text-align: center;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -271,6 +296,7 @@ h1 span {
     font-weight: 500;
     border-radius: 5px;
 }
+
 .btn1 {
     position: relative;
     display: inline-block;
@@ -281,6 +307,7 @@ h1 span {
     padding: 10px 20px;
     transition: color 0.4s ease;
 }
+
 .btn1::before {
     content: "";
     position: absolute;
@@ -291,12 +318,15 @@ h1 span {
     transition: transform 0.45s ease;
     z-index: -1;
 }
+
 .btn1:hover::before {
     transform: scaleX(1);
 }
+
 .btn1:hover {
     color: var(--azul);
 }
+
 .btn2 {
     position: relative;
     display: inline-block;
@@ -308,6 +338,7 @@ h1 span {
     border: 2px solid var(--naranja);
     transition: color 0.4s ease;
 }
+
 .btn2::before {
     content: "";
     position: absolute;
@@ -317,13 +348,16 @@ h1 span {
     transition: transform 0.4s ease;
     z-index: -1;
 }
+
 .btn2:hover::before {
     transform: scaleX(1);
 }
+
 .btn2:hover {
     color: var(--naranja);
     border-color: var(--azul);
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -348,10 +382,12 @@ h1 span {
     color: var(--azul);
     padding: 5px;
 }
+
 .flecha i {
     font-size: 20px;
     color: var(--azul);
 }
+
 /*!FOOTER*/
 .redes a {
     width: 40px;
@@ -366,12 +402,14 @@ h1 span {
     font-size: 21px;
     transition: .3s;
 }
+
 .redes a:hover {
     background-color: var(--naranja-hover);
     color: var(--azul);
     border-color: var(--naranja);
     transform: translateY(-5px);
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -386,14 +424,17 @@ h1 span {
     line-height: 0;
     background-color: var(--fondo-claro);
 }
+
 .divisor-montanas svg {
     width: 100%;
     height: 100%;
     display: block;
 }
-.colorOscuro{
+
+.colorOscuro {
     background-color: var(--fondo-oscuro);
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -410,6 +451,7 @@ h1 span {
     width: 100%;
     z-index: 100000;
 }
+
 .containerNav {
     display: flex;
     width: 90%;
@@ -417,26 +459,32 @@ h1 span {
     justify-content: space-between;
     align-items: center;
 }
+
 .opcionNavega {
     display: flex;
     gap: 30px;
 }
+
 .closeIcon {
     display: none;
 }
+
 .closeIcon i {
     font-size: 30px;
     background-color: var(--naranja);
     color: var(--azul);
     border-radius: 100%;
 }
+
 .navBar {
     display: none;
 }
+
 .navBar i {
     font-size: 30px;
     color: var(--naranja);
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -450,6 +498,7 @@ h1 span {
     width: 100%;
     min-height: 100vh;
 }
+
 .containerHeaderI {
     width: 90%;
     margin: 0 auto;
@@ -458,17 +507,21 @@ h1 span {
     justify-content: end;
     align-items: center;
 }
+
 .textos {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
 }
+
 .btnHeader {
     margin: 0 auto;
     display: flex;
     gap: 30px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -479,52 +532,63 @@ h1 span {
 .nosotros {
     background-color: var(--fondo-claro);
 }
-.nosotros .etiqueta {
+
+.nosotros .etiquetaO {
     width: 200px;
     margin: 0;
 }
+
 .textoN {
     display: flex;
     flex-direction: column;
     gap: 25px;
     width: 50%;
 }
+
 .textoN a {
     width: 150px;
 }
+
 .textoImgNosotros {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
-.carrusel {
+
+.carrusel2 {
     width: 40%;
     position: relative;
 }
+
 .contenedorCarrusel {
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
 }
+
 .imagenesCarrusel {
     display: flex;
     transition: transform 0.5s ease;
 }
+
 .imagenesCarrusel img {
     min-width: 100%;
     width: 100%;
     height: 430px;
     object-fit: cover;
 }
+
 .anterior {
     left: 15px;
     bottom: 10px;
 }
+
 .siguiente {
     right: 15px;
     bottom: 10px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -535,27 +599,33 @@ h1 span {
 .competencia {
     background-color: var(--fondo-oscuro);
 }
+
 .imgTexto {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .grupoImg {
     display: flex;
     gap: 25px;
 }
+
 .grupoImg img {
     filter: grayscale(100);
 }
+
 .grupoImg img:hover {
     filter: grayscale(0);
 }
+
 .parejaIMG {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 25px;
 }
+
 .textoCom {
     width: 50%;
     text-align: end;
@@ -564,9 +634,11 @@ h1 span {
     gap: 25px;
     align-items: end;
 }
+
 .textoCom .etiquetaO {
     width: 200px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -578,23 +650,28 @@ h1 span {
     background-color: var(--fondo-claro);
     position: relative;
 }
+
 .etapas {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     padding-top: 40px;
+    gap: 30px;
 }
+
 .coyote {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .quetzal {
     top: 0px;
     left: 0px;
     position: absolute;
 }
+
 .textoE {
     width: 50%;
     margin: 0 auto;
@@ -603,10 +680,12 @@ h1 span {
     flex-direction: column;
     gap: 25px;
 }
+
 .textoE a {
     width: 200px;
     margin: 0 auto;
 }
+
 .cardEtapa {
     width: 420px;
     display: flex;
@@ -615,15 +694,18 @@ h1 span {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .cardEtapa:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.22);
 }
+
 .footerCardE {
     background-color: var(--verde1);
     text-align: center;
     padding: 20px 15px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -634,16 +716,19 @@ h1 span {
 .paquetes {
     background-color: var(--fondo-oscuro);
 }
+
 .textoP {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
+
 .textoP .etiquetaO {
     width: 250px;
     margin: 0 auto;
 }
+
 .cardsPaquetes {
     display: flex;
     flex-wrap: wrap;
@@ -651,6 +736,7 @@ h1 span {
     gap: 80px;
     padding-top: 40px;
 }
+
 .cardPaquete {
     background: var(--fondo-claro);
     border: 1px solid rgba(11, 160, 24, 0.39);
@@ -663,14 +749,17 @@ h1 span {
     transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
+
 .cardPaquete:hover {
     transform: translateY(-6px);
     border-color: rgba(58, 245, 11, 0.4);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
 .cardPaqueteIMG {
     overflow: hidden;
 }
+
 .cardPaqueteIMG2 {
     width: 100%;
     height: 280px;
@@ -679,16 +768,19 @@ h1 span {
     transition: filter 0.4s, transform 0.4s;
     object-fit: cover;
 }
+
 .cardPaquete:hover .cardPaqueteIMG2 {
     filter: grayscale(0%);
     transform: scale(1.03);
 }
+
 .infoCard {
     padding: 22px 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
+
 .informacionPaq {
     display: flex;
     flex-direction: column;
@@ -696,9 +788,11 @@ h1 span {
     margin-bottom: 20px;
     flex: 1;
 }
+
 .infoCard a {
     text-align: center;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -710,11 +804,13 @@ h1 span {
     background-color: var(--fondo-claro);
     position: relative;
 }
+
 .textoImgUnifor {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .textoU {
     width: 50%;
     display: flex;
@@ -722,9 +818,11 @@ h1 span {
     gap: 30px;
     align-items: start;
 }
+
 .textoU .etiqueta {
     margin: 0;
 }
+
 .imagencamisa {
     width: 40%;
     display: flex;
@@ -732,9 +830,11 @@ h1 span {
     justify-content: center;
     align-items: center;
 }
+
 .imagencamisa img {
     width: 100%;
 }
+
 .bici {
     position: absolute;
     bottom: 0;
@@ -742,12 +842,14 @@ h1 span {
     height: auto;
     right: 60%;
 }
+
 .colibri {
     position: absolute;
     top: 0;
     left: 0;
     width: 250px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -755,27 +857,37 @@ h1 span {
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 */
-.premios{
+.premios {
     background-color: var(--fondo-oscuro);
 }
-.contendorPremiosImg{
+.premios .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.contendorPremiosImg {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     align-items: center;
 }
-.contendorPremiosImg img{
+
+.contendorPremiosImg img {
     border-radius: 7px;
 }
-.imganen1opremio{
+
+.imganen1opremio {
     height: 530px;
 }
-.parejaImgPremio{
+
+.parejaImgPremio {
     display: flex;
     flex-direction: column;
     gap: 17px;
 }
-.textosPremios{
+
+.textosPremios {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -783,10 +895,12 @@ h1 span {
     padding-bottom: 40px;
     gap: 20px;
 }
-.textosPremios .etiquetaO{
+
+.textosPremios .etiquetaO {
     width: 180px;
     margin: 0 auto;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -794,47 +908,56 @@ h1 span {
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 */
-.fanZone{
+.fanZone {
     background-color: var(--fondo-claro);
 }
-.imgTextosFZ{
+
+.imgTextosFZ {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     align-items: center;
 }
-.imagenesFZ{
+
+.imagenesFZ {
     gap: 40px;
     display: flex;
     flex-direction: column;
 }
-.imagenesFZ img{
+
+.imagenesFZ img {
     width: 600px;
     height: 300px;
 }
-.textosFZ{
+
+.textosFZ {
     text-align: end;
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: end;
 }
+
 .textosFZ .etiqueta {
     width: 250px;
     text-align: center;
 }
-.textosFZ a{
+
+.textosFZ a {
     text-align: center;
     width: 233px;
 }
-.botonesFZ{
+
+.botonesFZ {
     display: flex;
     justify-content: end;
 }
-.etiquetFZ{
+
+.etiquetFZ {
     display: flex;
     justify-content: end;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -842,11 +965,12 @@ h1 span {
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 */
-.contacto{
+.contacto {
     background-color: var(--fondo-oscuro);
     position: relative;
 }
-.textoC{
+
+.textoC {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -854,25 +978,30 @@ h1 span {
     width: 80%;
     margin: 0 auto;
 }
-.textoC .etiquetaO{
+
+.textoC .etiquetaO {
     width: 250px;
     margin: 0 auto;
 }
+
 .formularioIndex {
     display: flex;
     flex-direction: column;
     gap: 14px;
     padding-top: 40px;
 }
-.formularioIndex button{
+
+.formularioIndex button {
     width: 250px;
     margin: 0 auto;
 }
+
 .filaFormulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
 }
+
 .labelInput {
     display: flex;
     flex-direction: column;
@@ -880,6 +1009,7 @@ h1 span {
     align-items: center;
     text-align: center;
 }
+
 .label {
     font-size: 10px;
     font-weight: 500;
@@ -890,6 +1020,7 @@ h1 span {
     font-weight: bold;
     text-align: center;
 }
+
 .input,
 .textarea {
     background: rgba(20, 43, 59, 0.52);
@@ -903,21 +1034,25 @@ h1 span {
     width: 100%;
     transition: border-color 0.2s, background 0.2s;
 }
+
 .input::placeholder,
 .textarea::placeholder {
-    color:var(--blanco);
+    color: var(--blanco);
 }
+
 .input:focus,
 .textarea:focus {
-    border-color:#5DB9AD;
+    border-color: #5DB9AD;
     background: rgba(255, 255, 255, 0.06);
 }
+
 .textarea {
     resize: none;
     height: 240px;
     width: 80%;
 }
-.labelInpuT{
+
+.labelInpuT {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -925,17 +1060,20 @@ h1 span {
     align-items: center;
     padding-top: 40px;
 }
-.quetzal1{
+
+.quetzal1 {
     position: absolute;
     top: 0;
     left: 0;
 }
-.coyote1{
+
+.coyote1 {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 250px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -948,22 +1086,2176 @@ h1 span {
     color: var(--blanco);
     padding: 60px 0 20px;
 }
+
 .footerTop {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 45px;
     padding-bottom: 45px;
 }
+
 .footerLinks,
 .footerRedes {
     display: flex;
     flex-direction: column;
     gap: 13px;
 }
+
 .redes {
     display: flex;
     gap: 12px;
 }
+
+/*
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&NOSOTROS.HTML 
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FUENTES
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*!equipo*/
+.textoEquipoCard h3 {
+    font-family: var(--oswald);
+    font-size: 30px;
+    color: var(--verde2);
+}
+
+.textoEquipoCard p {
+    font-family: var(--monse);
+    font-size: 14px;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.infoModalEquipo h3 {
+    color: var(--naranja);
+    text-align: center;
+    font-family: var(--oswald);
+    font-size: 30px;
+}
+
+.infoModalEquipo p {
+    line-height: 1.7;
+}
+
+#apodoModalEquipo {
+    font-family: var(--monse);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--verde2);
+}
+
+#cargoModalEquipo {
+    font-family: var(--monse);
+    font-size: 18px;
+    color: var(--naranja);
+}
+
+.infoModalEquipo blockquote {
+    font-style: italic;
+    border-left: 3px solid var(--naranja);
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+#fraseModalEquipo {
+    color: var(--blanco);
+    font-family: var(--monse);
+    font-style: italic;
+    font-size: 14px;
+}
+
+#descripcionModalEquipo {
+    color: var(--blanco);
+    font-family: var(--monse);
+    font-size: 18px;
+}
+
+/*!Mision vision*/
+.cardMision h3 {
+    font-family: var(--oswald);
+    color: var(--naranja);
+    font-size: 25px;
+}
+
+.valoresPalabras h3 {
+    font-family: var(--oswald);
+    color: var(--verde2);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&ICONOS
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.footerCardEquipo i {
+    background-color: var(--verde2);
+    font-size: 26px;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.footerCardEquipo i:hover {
+    background-color: var(--naranja);
+    color: var(--blanco);
+}
+
+.cerrarModalEquipo {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--azul);
+    background-color: var(--naranja);
+    border-radius: 100%;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&HEADER
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.headerNosotros {
+    background: url(../img/nosotrosbanner.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.containerTextosINoso {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.containerTextosINoso .etiquetaO {
+    width: 290px;
+    margin: 0 auto;
+}
+
+.textosIN {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&ORIGEN
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.imgOrigen {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.origen {
+    background-color: var(--fondo-oscuro)
+}
+
+.textoOrigen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.textoOrigen .etiquetaO {
+    width: 213px;
+    margin: 0 auto;
+}
+
+.imgGrande {
+    width: 470px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.trioImagenesOri {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.trioImagenesOri img {
+    width: 80%;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&Equipo
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.equipo {
+    background-color: var(--fondo-claro);
+}
+
+.textoEquipo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.textoEquipo .etiqueta {
+    width: 275px;
+    margin: 0 auto;
+}
+
+.footerCardEquipo {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde1);
+    width: 100%;
+    align-items: center;
+}
+
+.cardEqui {
+    width: 520px;
+    height: 715px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardEqui img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.cardsEquipo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.modalEquipo {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modalEquipo.activa {
+    display: flex;
+}
+
+.contenidoModalEquipo {
+    position: relative;
+    display: flex;
+    width: 850px;
+    max-width: 100%;
+    background-color: var(--azul);
+    overflow: hidden;
+    border-radius: 10px;
+    animation: aparecerModal 0.3s ease;
+}
+
+.contenidoModalEquipo>img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.infoModalEquipo {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.encabezadoModal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes aparecerModal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&MISION VISION
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.misionVision {
+    background-color: var(--fondo-oscuro);
+}
+
+.textosMisionVision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textosMV {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textosMV .etiquetaO {
+    width: 201px;
+}
+
+.cardMision {
+    height: 237px;
+    width: 475px;
+    background: url(../img/fondomV.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.misivis {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.valorPalaImhg {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 40px;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&NATURALEZA
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.naturaleza {
+    background-color: var(--fondo-claro);
+}
+
+.textoImagenNatu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textoNaturaleza {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 20px;
+    width: 50%;
+}
+
+.etiquederecha {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.etiquederecha .etiqueta {
+    margin: 0;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&INVITACION
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.invitacion {
+    background-color: var(--fondo-oscuro);
+    text-align: center;
+}
+
+.invitacion .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.textoInvitacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textoInvitacion .etiquetaO {
+    width: 282px;
+    margin: 0 auto;
+}
+
+.imagenPromocionañ {
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.footerN {
+    background-color: var(--azul);
+    padding-bottom: 40px;
+}
+
+.footerN .footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&COMPETENCIA.HTML 
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FUENTE
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*!caracteritica*/
+.cardCompe h3 {
+    font-family: var(--oswald);
+    font-size: 25px;
+    color: var(--naranja);
+    text-align: center;
+}
+
+.caracteristicasCompeSe h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&HEADER
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.headerCompetencia {
+    background: url(../img/fondoCompe.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&INFORMACION
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.informacionCI {
+    background-color: var(--fondo-claro);
+}
+
+.textoImageninfoCompe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textoCOmpe {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.izquierda .etiqueta {
+    margin: 0;
+    width: 290px;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&CARACTERISTICA
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.caracteristicasCompeSe {
+    background-color: var(--fondo-oscuro);
+}
+
+.carcteristicasCompe {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.cardCompe {
+    width: 319px;
+    height: 269px;
+    background: url(../img/fondoCardCompetencia.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    text-align: center;
+}
+
+.caracteristicasCompeSe .etiquetaO {
+    width: 250px;
+    margin: 0 auto;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&GALERIA
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.galeriaSec {
+    background-color: var(--fondo-claro);
+}
+
+.tetxosGaleria {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.foto:hover img {
+    transform: scale(1.08);
+}
+
+/* DIFERENTES TAMAÑOS */
+.foto:nth-child(1),
+.foto:nth-child(10),
+.foto:nth-child(19) {
+    grid-column: span 2;
+}
+
+.foto:nth-child(7) {
+    grid-row: span 2;
+}
+
+.foto:nth-child(16) {
+    grid-row: span 2;
+}
+
+.foto:nth-child(5),
+.foto:nth-child(14),
+.foto:nth-child(27) {
+    grid-row: span 2;
+}
+
+/* EFECTO HOVER */
+.foto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.foto:hover::after {
+    opacity: 1;
+}
+
+/*
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&PAQUETES.HTML 
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FUENTE
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.numeroPrecio {
+    font-family: var(--monse);
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--naranja);
+}
+
+.cantidadNP {
+    font-family: var(--monse);
+    font-size: 16px;
+    color: var(--blanco);
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+/*!hospedaje*/
+.titulosServicios h2 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--naranja);
+    font-family: var(--oswald);
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulosServicios h2::after {
+    content: '';
+    flex: 1;
+    height: 0.5px;
+    background: rgba(199, 115, 18, 0.473);
+}
+
+.NombreServicios {
+    font-family: var(--oswald);
+    font-size: 20px;
+    color: var(--verde2);
+    padding-bottom: 25px;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&HEADER
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.headerPaquetes {
+    height: 900px;
+    width: 100%;
+}
+
+#pulso {
+    background: url(../img/fondopulso.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#corazon {
+    background: url(../img/fondoCorazon.jpg) center center;
+}
+
+#alma {
+    background: url(../img/fondoAlma.jpg) center center;
+    background-size: cover;
+}
+
+.infromacionPaquetes {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 100%;
+    padding-bottom: 40px;
+    gap: 20px;
+}
+
+.infromacionPaquetes a {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.etiquetaH1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.precioxpeer {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&Descripcion
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.paqueteDescripcion {
+    background-color: var(--fondo-oscuro);
+}
+
+.paqueteDescripcion .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.paqTexto {
+    width: 60%;
+    gap: 20px;
+}
+
+.queTiene {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.cardDetalle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 0.5px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+}
+
+.puntoPaq {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--naranja);
+    flex-shrink: 0;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&Hospedaje
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.hospedaje {
+    background-color: var(--fondo-claro);
+}
+
+.gridServicios {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+
+.cardservicio {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 0.5px solid rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.03);
+    width: 500px;
+    cursor: pointer;
+}
+
+.imagenCardServi {
+    overflow: hidden;
+}
+
+.imagenCardServi {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(15%);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.cardservicio:hover .imagenCardServi {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+.footerServiciosCard {
+    padding: 14px;
+    background: var(--fondo-oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorOscuroCardServico {
+    background-color: var(--crema);
+}
+
+.colorOscuroCardServico .NombreServicios {
+    color: var(--verde1);
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&ALIMENTACION
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.alimentacion {
+    background-color: var(--fondo-oscuro);
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&TRANSPORTE
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.transporte {
+    background-color: var(--fondo-claro);
+}
+
+.gridLogos {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.cardLogo {
+    border: 0.5px solid rgba(12, 11, 11, 0.486);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s;
+    width: 290px;
+    height: 220px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cardLogo img {
+    width: 350px;
+    height: 300px;
+    object-fit: contain;
+    opacity: 1;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&SALUD
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.salud {
+    background-color: var(--fondo-oscuro);
+}
+
+.cardLogoS {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 0.5px solid rgba(12, 11, 11, 0.486);
+}
+
+.cardLogoS img {
+    width: 100%;
+    height: 100%;
+}
+
+.divParaInscri {
+    background-color: var(--verde1);
+    border: 1px solid rgba(50, 245, 11, 0.767);
+    border-radius: 14px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.TextoInscribirseP h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--naranja);
+    margin-bottom: 4px;
+    font-family: var(--oswald);
+}
+
+.TextoInscribirseP p {
+    font-size: 15px;
+    color: var(--blanco);
+    font-family: var(--monse);
+}
+
+.salud2 {
+    background-color: var(--fondo-claro);
+}
+
+/*
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&Etapas.HTML 
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FUENTES
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.infoA h4 {
+    color: var(--verde2);
+    font-size: 20px;
+    font-family: var(--oswald);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.infoDatosP h4 {
+    color: var(--verde2);
+    font-size: 20px;
+    font-family: var(--oswald);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.cambioColor h4 {
+    color: var(--verde1);
+}
+
+.etapaindex {
+    background: url(../img/fondoEtapas.jpg);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.containerTextosEtapas {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: end;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.containerTextosEtapas .etiquetaO {
+    width: 340px;
+    margin: 0 auto;
+}
+
+.informacionEtapasinde {
+    background-color: var(--fondo-claro);
+}
+
+.textoEtapasImagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tetxoEt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tetxoEt .etiquetaO {
+    margin: 0;
+    width: 216px;
+}
+
+.carrera1 {
+    background-color: var(--fondo-oscuro);
+}
+
+.infromacionCarrera {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.izquierdaCarrera {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carrusel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.contenedorCarrusel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagenesCarrusel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    height: 450px;
+}
+
+.imagenesCarrusel img {
+    width: 100%;
+    min-width: 100%;
+    flex: 0 0 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+.flecha {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.derechaCarrera {
+    width: 50%;
+}
+
+.infromacionAltimetria {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.infoDatosP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.derechaCarrera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 35%;
+}
+
+.rutasIMG {
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 650px;
+    height: 507px;
+    object-fit: cover;
+}
+
+.rutasIMG2 {
+    width: 900px;
+    border-radius: 15px;
+}
+
+.dere2 {
+    width: 50%;
+}
+
+.altime {
+    width: 100%;
+}
+
+.pareja {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textosCarrera {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.textosCarrera h3 {
+    font-family: var(--oswald);
+    font-size: 30px;
+    color: var(--verde2);
+}
+
+.tablas {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo {
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--verde2);
+    color: var(--azul);
+    font-family: var(--oswald);
+    font-size: 20px;
+    text-align: center;
+}
+
+.cambioColorT {
+    background-color: var(--verde1);
+    color: var(--blanco);
+}
+
+.tetxotabla {
+    background-color: var(--crema);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.carrera2 {
+    background-color: var(--fondo-claro);
+}
+
+/*
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&Premios.HTML 
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FUENTES
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.numero {
+    position: absolute;
+    font-family: var(--beba);
+    font-size: 80px;
+    top: -50px;
+    left: -15px;
+    color: var(--naranja);
+}
+
+.nombrePremio {
+    font-family: var(--beba);
+    font-size: 25px;
+    color: var(--verde2);
+}
+
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&HEADER
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.bannerPremios {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/premiosbanner.jpg);
+}
+
+.textosPreCOntainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+    width: 80%;
+}
+
+.textosPreCOntainer .etiquetaO {
+    width: 350px;
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&INFORMACION
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.infoGeneral {
+    background-color: var(--fondo-oscuro);
+}
+
+.textoInfoPremios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.textoPremio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.premioCard {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.premioCard img {
+    width: 100%;
+}
+
+.textfootercardPremio {
+    background-color: var(--verde1);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.premioCarrera2 {
+    background-color: var(--fondo-oscuro);
+}
+
+.premiosCardGrande {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.premiosCarrera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.cardGrandePremio {
+    position: relative;
+    width: 477px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footercardPG {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--crema);
+    gap: 20px;
+    min-height: 215px;
+}
+
+.colorverdeClaro {
+    color: var(--verde2);
+}
+
+.colorNranja {
+    color: var(--naranja);
+}
+
+/*
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&FanZone.HTML 
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+!&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&FUENTES
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+
+.columnaHora,
+.columnaInvitado,
+.columnaActividad {
+    background-color: var(--verde2);
+    color: var(--blanco);
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-family: var(--oswald);
+    font-size: 20px;
+}
+
+.horaInvitado {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    font-family: var(--monse);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nombreInvitado,
+.actividadInvitado {
+    background-color: var(--crema);
+    color: var(--azul);
+    font-family: var(--monse);
+    font-size: 18px;
+}
+.nombreLugar{
+    font-family: var(--oswald);
+    color: var(--verde1);
+    font-size: 25px;
+}
+.alimentacionNom{
+    font-family: var(--oswald);
+    color: var(--naranja);
+    font-size: 25px;
+}
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&BOTONES
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.btnFecha {
+    background-color: transparent;
+    border: 1px solid var(--naranja);
+    color: var(--naranja);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: var(--monse);
+    font-size: 16px;
+}
+
+.btnFecha:hover,
+.btnFecha.activo {
+    background-color: var(--naranja);
+    color: var(--azul);
+}
+
+.categoriasFanZone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 40px;
+
+}
+
+.btnCategoria {
+    background-color: transparent;
+    border: 1px solid var(--naranja);
+    color: var(--naranja);
+    padding: 9px 35px;
+    min-width: 140px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: var(--monse);
+}
+
+.btnCategoria:hover,
+.btnCategoria.activo {
+    background-color: var(--naranja);
+    color: var(--azul);
+}
+
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&HEADER
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+.headerfanzone {
+    background: url(../img/bannerFanZone.jpg);
+    width: 100%;
+    min-height: 100vh;
+}
+.infoFZ {
+    background-color: var(--fondo-claro);
+}
+.textosFZH {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.fanZoneI {
+    background-color: var(--fondo-oscuro);
+}
+.containerFanZone {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.encabezadoFanZone {
+    text-align: center;
+    max-width: 85%;
+    margin: 0 auto 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fechasFanZone {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 65px;
+}
+.encabezadoTabla {
+    display: grid;
+    grid-template-columns: 130px 145px 1fr 1.1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.filaFanZone {
+    display: grid;
+    grid-template-columns: 130px 145px 1fr 1.1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+    animation: aparecer 0.4s ease;
+}
+.encabezadoTabla,
+.filaFanZone {
+    display: grid;
+    grid-template-columns: 130px 145px 1fr 1.1fr;
+    gap: 30px;
+    align-items: center;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.imagenInvitado {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    display: block;
+}
+.horaInvitado,
+.nombreInvitado,
+.actividadInvitado {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 13px;
+}
+.gridConciertos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 90px 35px;
+}
+.tarjetaConcierto:nth-child(4) {
+    grid-column: 2;
+}
+.tarjetaConcierto {
+    position: relative;
+}
+.infoConcierto {
+    background: rgba(150, 150, 150, 0.849);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(167, 165, 165, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    width: 300px;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    left: -0.5px;
+    bottom: -1px;
+}
+.titulosCardC{
+    font-family: var(--oswald);
+    font-size: 20px;
+    color: var(--naranja);
+}
+.datoConcierto{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pCardC{
+    color: var(--blanco);
+    font-family: var(--monse);
+    font-size: 18px;
+}
+.cLugar{
+    display: flex;
+    gap: 37px;
+    border: 1px solid var(--verde1);
+}
+.informacionLugar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0 20px;
+}
+
+.otroLado{
+    text-align: end;
+}
+.cardLugareas{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 40px;
+}
+.textosLugares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cardAlimentacion{
+    width: 500px;
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cardAlimentacion img{
+    width: 100%;
+}
+.cardAlimentacion:hover .tetxosCardAFZ{
+    transform: translateY(-250px);
+    height: 100%;
+}
+.tetxosCardAFZ{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 66px;
+    background-color: var(--verde1);
+    transform: translateY(0px);
+    min-height: 258px;
+    padding: 20px;
+}
+.cardsAliemtacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.alimentacionFZ{
+    background-color: var(--fondo-oscuro);
+}
+.textosAlFZ{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1030px) {
+
+    .navBar {
+        display: block;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+
+    }
+    .opcionNavega {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+
+        background: #142B3B;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        padding: 90px 30px 30px;
+        gap: 25px;
+
+        transition: right 0.4s ease;
+        z-index: 1000;
+    }
+
+    /* Menú abierto */
+    .opcionNavega.active {
+        right: 0;
+    }
+
+    .navItem a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .closeIcon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: white;
+        font-size: 32px;
+    }
+    .containerHeaderI{
+        width: 95%;
+        justify-content: center;
+    }
+    .textos{
+        width: 100%;
+    }
+    .etiquetaO{
+        font-size: 16px;
+        padding: 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .h2Oscuro{
+        font-size: 35px;
+    }
+    .h2Claro{
+        font-size: 35px;
+    }
+    .textoImgNosotros{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container{
+        width: 95%;
+    }
+    .textoN{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .carrusel2{
+        width: 70%;
+    }
+    .imgTexto{
+        flex-direction: column-reverse;
+    }
+    .textoCom{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .textoE{
+        width: 100%;
+    }
+    .textoImgUnifor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoU{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .parejaImgPremio{
+        display: none;
+    }
+    .contendorPremiosImg{
+        flex-direction: column;
+    }
+    .contendorPremiosImg img{
+        width: 844px;
+        height: 540px;
+        object-fit: cover;
+    }
+    .imgTextosFZ{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .imagenesFZ{
+        margin: 0 auto;
+    }
+    .textosFZ{
+        text-align: center;
+        align-items: center;
+    }
+    .textoC{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+    .gridConciertos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 20px;
+    }
+
+    .tarjetaConcierto:nth-child(4) {
+        grid-column: auto;
+    }
+
+    .encabezadoTabla,
+    .filaFanZone {
+        grid-template-columns: 90px 110px 1fr 1fr;
+        gap: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .encabezadoTabla {
+        grid-template-columns: 90px 110px 1fr 1fr;
+        gap: 12px;
+    }
+
+    .filaFanZone {
+        grid-template-columns: 90px 110px 1fr 1fr;
+        gap: 12px;
+    }
+
+    .imagenInvitado {
+        width: 90px;
+        height: 100px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .fanZone {
+        padding: 60px 5%;
+    }
+
+    .encabezadoFanZone {
+        margin-bottom: 35px;
+    }
+
+    .fechasFanZone {
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    .btnFecha {
+        flex: 1 1 40%;
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+
+    .categoriasFanZone {
+        gap: 8px;
+        margin-bottom: 35px;
+    }
+
+    .btnCategoria {
+        flex: 1;
+        min-width: 0;
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+
+    .encabezadoTabla {
+        display: none;
+    }
+
+    .filaFanZone {
+        grid-template-columns: 85px 1fr;
+        gap: 10px;
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.04);
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .imagenInvitado {
+        width: 85px;
+        height: 110px;
+        grid-row: span 3;
+    }
+
+    .horaInvitado,
+    .nombreInvitado,
+    .actividadInvitado {
+        min-height: 35px;
+        font-size: 12px;
+        padding: 7px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 190px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeriaSec {
+        padding: 40px 5%;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+        gap: 10px;
+    }
+
+    .foto:nth-child(1),
+    .foto:nth-child(10),
+    .foto:nth-child(19) {
+        grid-column: span 1;
+    }
+
+    .foto:nth-child(5),
+    .foto:nth-child(14),
+    .foto:nth-child(27) {
+        grid-row: span 1;
+    }
+
+    .lightbox {
+        padding: 20px;
+    }
+
+    .lightbox img {
+        max-width: 95%;
+        max-height: 75vh;
+    }
+
+    .anterior {
+        left: 5px;
+    }
+
+    .siguiente {
+        right: 5px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+    .contenidoModalEquipo {
+        flex-direction: column;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .contenidoModalEquipo>img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .infoModalEquipo {
+        padding: 25px;
+    }
+}
+
+
 
 
 
