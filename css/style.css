@@ -2758,13 +2758,11 @@ h1 span {
     font-family: var(--monse);
     font-size: 18px;
 }
-
 .cLugar {
     display: flex;
     gap: 37px;
     border: 1px solid var(--verde1);
 }
-
 .informacionLugar {
     display: flex;
     flex-direction: column;
@@ -2772,25 +2770,21 @@ h1 span {
     gap: 20px;
     padding: 20px 0 20px;
 }
-
 .otroLado {
     text-align: end;
 }
-
 .cardLugareas {
     display: flex;
     flex-direction: column;
     gap: 100px;
     padding-top: 40px;
 }
-
 .textosLugares {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 .cardAlimentacion {
     width: 500px;
     position: relative;
@@ -2800,16 +2794,13 @@ h1 span {
     overflow: hidden;
     cursor: pointer;
 }
-
 .cardAlimentacion img {
     width: 100%;
 }
-
 .cardAlimentacion:hover .tetxosCardAFZ {
     transform: translateY(-250px);
     height: 100%;
 }
-
 .tetxosCardAFZ {
     display: flex;
     flex-direction: column;
@@ -2820,18 +2811,15 @@ h1 span {
     min-height: 258px;
     padding: 20px;
 }
-
 .cardsAliemtacion {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 40px;
 }
-
 .alimentacionFZ {
     background-color: var(--fondo-oscuro);
 }
-
 .textosAlFZ {
     display: flex;
     flex-direction: column;
@@ -2840,18 +2828,49 @@ h1 span {
     gap: 20px;
     padding-bottom: 40px;
 }
-
 .premioCarrera1 {
     background-color: var(--fondo-claro);
 }
-
 .imagenesCel {
     display: none;
 }
-
 .promocion2 {
     display: none;
 }
+
+
+
+
+
+
+#inscribirse{
+    background: url(../img/inascribrise.jpg) center center;
+    background-size: cover;
+}
+.formularioInscrib{
+    background-color: var(--fondo-oscuro);
+}
+.textoInsc{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.formualrionIn{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.formualrionIn .labelInput{
+    width: 100%;
+}
+
+
 
 
 
@@ -2886,10 +2905,6 @@ h1 span {
         align-items: center;
     }
 }
-
-
-
-
 @media (max-width: 1030px) {
 
     .navBar {
@@ -3208,7 +3223,6 @@ h1 span {
         align-items: center;
     }
 }
-
 @media (max-width: 950px) {
     .galeria {
         grid-template-columns: repeat(3, 1fr);
@@ -3259,7 +3273,6 @@ h1 span {
         width: 100%;
     }
 }
-
 @media (max-width: 850px) {
 
     .encabezadoTabla {
@@ -3412,18 +3425,16 @@ h1 span {
     }
 
 }
+@media (max-width: 768px) {
+    .footerTop {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVE */
+    .footerBottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 @media (max-width: 750px) {
     .gridConciertos {
         grid-template-columns: repeat(2, 1fr);
@@ -3486,12 +3497,26 @@ h1 span {
     .textoEtapasImagenes img{
         width: 100%;
     }
+    .formualrionIn{
+        width: 100%;
+    }
 }
+@media (max-width: 650px) {
+    .contenidoModalEquipo {
+        flex-direction: column;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
 
+    .contenidoModalEquipo>img {
+        width: 100%;
+        height: 220px;
+    }
 
-/* RESPONSIVE */
-
-
+    .infoModalEquipo {
+        padding: 25px;
+    }
+}
 @media (max-width: 600px) {
     h1 {
         width: 100%;
@@ -3601,14 +3626,6 @@ h1 span {
     .carrusel{
         width: 100%;
     }
-}
-
-
-/* RESPONSIVE */
-
-
-
-@media (max-width: 600px) {
     .galeriaSec {
         padding: 40px 5%;
     }
@@ -3648,47 +3665,6 @@ h1 span {
         right: 5px;
     }
 }
-
-
-
-
-
-
-
-@media (max-width: 650px) {
-    .contenidoModalEquipo {
-        flex-direction: column;
-        max-height: 90vh;
-        overflow-y: auto;
-    }
-
-    .contenidoModalEquipo>img {
-        width: 100%;
-        height: 220px;
-    }
-
-    .infoModalEquipo {
-        padding: 25px;
-    }
-}
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .footerTop {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footerBottom {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 @media (max-width: 480px) {
     .footerTop {
         grid-template-columns: 1fr;
