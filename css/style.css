@@ -860,12 +860,14 @@ h1 span {
 .premios {
     background-color: var(--fondo-oscuro);
 }
+
 .premios .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
 }
+
 .contendorPremiosImg {
     display: flex;
     justify-content: space-between;
@@ -1550,7 +1552,7 @@ h1 span {
 }
 
 .imagenPromocionañ {
-    width: 85%;
+    width: 95%;
     height: auto;
     object-fit: cover;
     margin: 0 auto;
@@ -2527,16 +2529,19 @@ h1 span {
     font-family: var(--monse);
     font-size: 18px;
 }
-.nombreLugar{
+
+.nombreLugar {
     font-family: var(--oswald);
     color: var(--verde1);
     font-size: 25px;
 }
-.alimentacionNom{
+
+.alimentacionNom {
     font-family: var(--oswald);
     color: var(--naranja);
     font-size: 25px;
 }
+
 /*
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -2606,9 +2611,11 @@ h1 span {
     width: 100%;
     min-height: 100vh;
 }
+
 .infoFZ {
     background-color: var(--fondo-claro);
 }
+
 .textosFZH {
     display: flex;
     flex-direction: column;
@@ -2616,14 +2623,17 @@ h1 span {
     align-items: center;
     gap: 20px;
 }
+
 .fanZoneI {
     background-color: var(--fondo-oscuro);
 }
+
 .containerFanZone {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
+
 .encabezadoFanZone {
     text-align: center;
     max-width: 85%;
@@ -2633,6 +2643,7 @@ h1 span {
     flex-direction: column;
     gap: 20px;
 }
+
 .fechasFanZone {
     display: flex;
     justify-content: center;
@@ -2640,6 +2651,7 @@ h1 span {
     gap: 10px;
     margin-bottom: 65px;
 }
+
 .encabezadoTabla {
     display: grid;
     grid-template-columns: 130px 145px 1fr 1.1fr;
@@ -2647,6 +2659,7 @@ h1 span {
     align-items: center;
     margin-bottom: 25px;
 }
+
 .filaFanZone {
     display: grid;
     grid-template-columns: 130px 145px 1fr 1.1fr;
@@ -2655,6 +2668,7 @@ h1 span {
     margin-bottom: 25px;
     animation: aparecer 0.4s ease;
 }
+
 .encabezadoTabla,
 .filaFanZone {
     display: grid;
@@ -2662,6 +2676,7 @@ h1 span {
     gap: 30px;
     align-items: center;
 }
+
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -2673,12 +2688,14 @@ h1 span {
         transform: translateY(0);
     }
 }
+
 .imagenInvitado {
     width: 115px;
     height: 115px;
     object-fit: cover;
     display: block;
 }
+
 .horaInvitado,
 .nombreInvitado,
 .actividadInvitado {
@@ -2691,18 +2708,22 @@ h1 span {
     padding: 10px;
     font-size: 13px;
 }
+
 .gridConciertos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 90px 35px;
 }
+
 .tarjetaConcierto:nth-child(4) {
     grid-column: 2;
 }
+
 .tarjetaConcierto {
     position: relative;
 }
+
 .infoConcierto {
     background: rgba(150, 150, 150, 0.849);
     backdrop-filter: blur(12px);
@@ -2719,27 +2740,32 @@ h1 span {
     left: -0.5px;
     bottom: -1px;
 }
-.titulosCardC{
+
+.titulosCardC {
     font-family: var(--oswald);
     font-size: 20px;
     color: var(--naranja);
 }
-.datoConcierto{
+
+.datoConcierto {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.pCardC{
+
+.pCardC {
     color: var(--blanco);
     font-family: var(--monse);
     font-size: 18px;
 }
-.cLugar{
+
+.cLugar {
     display: flex;
     gap: 37px;
     border: 1px solid var(--verde1);
 }
-.informacionLugar{
+
+.informacionLugar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2747,22 +2773,25 @@ h1 span {
     padding: 20px 0 20px;
 }
 
-.otroLado{
+.otroLado {
     text-align: end;
 }
-.cardLugareas{
+
+.cardLugareas {
     display: flex;
     flex-direction: column;
     gap: 100px;
     padding-top: 40px;
 }
-.textosLugares{
+
+.textosLugares {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.cardAlimentacion{
+
+.cardAlimentacion {
     width: 500px;
     position: relative;
     height: 500px;
@@ -2771,14 +2800,17 @@ h1 span {
     overflow: hidden;
     cursor: pointer;
 }
-.cardAlimentacion img{
+
+.cardAlimentacion img {
     width: 100%;
 }
-.cardAlimentacion:hover .tetxosCardAFZ{
+
+.cardAlimentacion:hover .tetxosCardAFZ {
     transform: translateY(-250px);
     height: 100%;
 }
-.tetxosCardAFZ{
+
+.tetxosCardAFZ {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -2788,16 +2820,19 @@ h1 span {
     min-height: 258px;
     padding: 20px;
 }
-.cardsAliemtacion{
+
+.cardsAliemtacion {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 40px;
 }
-.alimentacionFZ{
+
+.alimentacionFZ {
     background-color: var(--fondo-oscuro);
 }
-.textosAlFZ{
+
+.textosAlFZ {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -2806,6 +2841,17 @@ h1 span {
     padding-bottom: 40px;
 }
 
+.premioCarrera1 {
+    background-color: var(--fondo-claro);
+}
+
+.imagenesCel {
+    display: none;
+}
+
+.promocion2 {
+    display: none;
+}
 
 
 
@@ -2814,9 +2860,32 @@ h1 span {
 
 
 
+@media (max-width:1800px) {
+    .parejaImgPremio {
+        display: none;
+    }
 
+    .imganen1opremio {
+        width: 40%;
+        height: auto;
+    }
 
+    .imgTexto {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
 
+    .textoCom {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .textoE {
+        align-items: center;
+    }
+}
 
 
 
@@ -2826,7 +2895,8 @@ h1 span {
     .navBar {
         display: block;
     }
-    .nav{
+
+    .nav {
         position: fixed;
         top: 0;
         left: 0;
@@ -2834,6 +2904,7 @@ h1 span {
         padding: 20px 0;
 
     }
+
     .opcionNavega {
         position: fixed;
         top: 0;
@@ -2841,7 +2912,7 @@ h1 span {
         width: 300px;
         height: 100vh;
 
-        background: #142B3B;
+        background: var(--azul);
 
         display: flex;
         flex-direction: column;
@@ -2874,91 +2945,473 @@ h1 span {
         color: white;
         font-size: 32px;
     }
-    .containerHeaderI{
+
+    .containerHeaderI {
         width: 95%;
         justify-content: center;
     }
-    .textos{
+
+    .textos {
         width: 100%;
     }
-    .etiquetaO{
+
+    .etiquetaO {
         font-size: 16px;
         padding: 10px;
     }
-    h1{
+
+    h1 {
         font-size: 50px;
     }
-    .h2Oscuro{
+
+    .h2Oscuro {
         font-size: 35px;
     }
-    .h2Claro{
+
+    .h2Claro {
         font-size: 35px;
     }
-    .textoImgNosotros{
+
+    .textoImgNosotros {
         flex-direction: column;
         justify-content: center;
     }
-    .container{
+
+    .container {
         width: 95%;
     }
-    .textoN{
+
+    .textoN {
         width: 100%;
         text-align: center;
         align-items: center;
         padding-bottom: 40px;
     }
-    .carrusel2{
+
+    .carrusel2 {
         width: 70%;
     }
-    .imgTexto{
+
+    .imgTexto {
         flex-direction: column-reverse;
     }
-    .textoCom{
+
+    .textoCom {
         width: 100%;
         text-align: center;
         align-items: center;
         padding-bottom: 40px;
     }
-    .textoE{
+
+    .textoE {
         width: 100%;
     }
-    .textoImgUnifor{
+
+    .textoImgUnifor {
         flex-direction: column;
         align-items: center;
     }
-    .textoU{
+
+    .textoU {
         width: 100%;
         text-align: center;
         align-items: center;
         padding-bottom: 40px;
     }
-    .parejaImgPremio{
+
+    .parejaImgPremio {
         display: none;
     }
-    .contendorPremiosImg{
+
+    .contendorPremiosImg {
         flex-direction: column;
     }
-    .contendorPremiosImg img{
+
+    .contendorPremiosImg img {
         width: 844px;
         height: 540px;
         object-fit: cover;
     }
-    .imgTextosFZ{
+
+    .imgTextosFZ {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .imagenesFZ{
+
+    .imagenesFZ {
         margin: 0 auto;
     }
-    .textosFZ{
+
+    .textosFZ {
         text-align: center;
         align-items: center;
     }
-    .textoC{
+
+    .textoC {
+        width: 100%;
+    }
+
+    .textoEquipo {
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .cardsEquipo {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .textoEquipoCard h3 {
+        font-size: 25px;
+    }
+
+    .textosMisionVision {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .textosMV {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .cardMision {
+        width: 100%;
+        background: url(../img/fondoVT.png) no-repeat;
+        background-size: cover;
+    }
+
+    .textoImagenNatu {
+        flex-direction: column-reverse;
+    }
+
+    .textoNaturaleza {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .etiquederecha {
+        justify-content: center;
+    }
+
+    .textoEtapasImagenes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tetxoEt {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .textosCarrera {
+        align-items: center;
+    }
+
+    .alreves {
+        flex-direction: column-reverse;
+    }
+
+    .derechaCarrera {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .izquierdaCarrera {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carrusel {
+        width: 85%;
+    }
+
+    .tetxotabla .pOscuro {
+        font-size: 16px;
+    }
+
+    .tablas {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .infromacionCarrera {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .textoImageninfoCompe {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .textoCOmpe {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .carcteristicasCompe {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .tetxosGaleria {
+        align-items: center;
+    }
+
+    .paqueteDescripcion .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .paqTexto {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .queTiene {
+        width: 100%;
+    }
+
+    .premiosCarrera {
+        gap: 60px;
+    }
+
+    .premiosCardGrande {
+        gap: 60px;
+    }
+
+    .bannerPremios {
+        background: url(../img/premiosbanner.jpg) top center no-repeat;
+    }
+
+    .textoE {
+        align-items: center;
+    }
+}
+
+@media (max-width: 950px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 190px;
+    }
+
+    .grupoImg {
+        flex-direction: column;
+    }
+
+    .parejaIMG img {
+        width: 90%;
+    }
+
+    .grupoImg {
+        display: none;
+    }
+
+    .imagenesCel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contendorPremiosImg img {
+        width: 100%;
+    }
+
+    .imgOrigen {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .trioImagenesOri {
+        display: none;
+    }
+
+    .imgGrande {
+        width: 320px;
+    }
+
+    .imagenPromocionañ {
+        width: 100%;
+    }
+    .rutasIMG2{
         width: 100%;
     }
 }
 
+@media (max-width: 850px) {
+
+    .encabezadoTabla {
+        grid-template-columns: 90px 110px 1fr 1fr;
+        gap: 12px;
+    }
+
+    .filaFanZone {
+        grid-template-columns: 90px 110px 1fr 1fr;
+        gap: 12px;
+    }
+
+    .imagenInvitado {
+        width: 90px;
+        height: 100px;
+    }
+
+    .imagenesCel {
+        width: 100%;
+    }
+
+    .imagenesCel img {
+        width: 100%;
+    }
+
+    .imagenesFZ {
+
+        width: 100%;
+    }
+
+    .imagenesFZ img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .indexH {
+        background: url(../img/index.png) center center;
+        background-size: cover;
+    }
+
+    .carrusel2 {
+        width: 100%;
+    }
+
+    .cardEtapa {
+        width: 100%;
+    }
+
+    .imagencamisa {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .h2Claro {
+        font-size: 30px;
+    }
+
+    .pClaro {
+        font-size: 16px;
+    }
+
+    .h2Oscuro {
+        font-size: 30px;
+    }
+
+    .pOscuro {
+        font-size: 16px;
+    }
+
+    .etiquetaO {
+        font-size: 14px;
+    }
+
+    .tiryuloCardE {
+        font-size: 20px;
+    }
+
+    .nivelPClaro {
+        font-size: 14px;
+    }
+
+    .nombreP {
+        font-size: 20px;
+    }
+
+    .detalles {
+        font-size: 12px;
+    }
+
+    .fecha {
+        font-size: 10px;
+    }
+
+    .footerLinks a {
+        font-size: 14px;
+    }
+
+    .footerMarca p {
+        font-size: 14px;
+    }
+
+    .footerLinks h3 {
+        font-size: 14px;
+    }
+
+    .footerLinks,
+    .footerRedes {
+        align-items: center;
+    }
+
+    .footerMarca {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .imagenPromocionañ {
+        display: none;
+    }
+
+    .promocion2 {
+        display: block;
+        width: 100%;
+    }
+
+    .promocion2 img {
+        width: 100%;
+    }
+
+    #nombreModalEquipo {
+        font-size: 20px;
+    }
+
+    #apodoModalEquipo {
+        font-size: 12px;
+    }
+
+    #cargoModalEquipo {
+        font-size: 15px;
+    }
+
+    #descripcionModalEquipo {
+        font-size: 16px;
+    }
+
+}
 
 
 
@@ -2986,43 +3439,71 @@ h1 span {
         grid-template-columns: 90px 110px 1fr 1fr;
         gap: 12px;
     }
+
+    .coyote1 {
+        display: none;
+    }
+
+    .quetzal1 {
+        display: none;
+    }
+
+    .btnHeader {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cardEqui {
+        width: 100%;
+    }
+
+    .textoImagenNatu img {
+        width: 100%;
+    }
+
+    .modalEquipo {
+        z-index: 10000000;
+    }
+
+    .contenidoModalEquipo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 25%;
+    }
+    .cardCompe h3{
+        font-size: 20px;
+    }
+    .textoImageninfoCompe img{
+        width: 100%;
+    }
+    .altime{
+        width: 100%;
+    }
+    .rutasIMG{
+        width: 100%;
+    }
+    .textoEtapasImagenes img{
+        width: 100%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* RESPONSIVE */
 
-@media (max-width: 850px) {
-
-    .encabezadoTabla {
-        grid-template-columns: 90px 110px 1fr 1fr;
-        gap: 12px;
-    }
-
-    .filaFanZone {
-        grid-template-columns: 90px 110px 1fr 1fr;
-        gap: 12px;
-    }
-
-    .imagenInvitado {
-        width: 90px;
-        height: 100px;
-    }
-
-}
 
 @media (max-width: 600px) {
+    h1 {
+        width: 100%;
+    }
+
+    .containerTextosINoso {
+        width: 95%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 130px;
+    }
 
     .fanZone {
         padding: 60px 5%;
@@ -3082,114 +3563,50 @@ h1 span {
         padding: 7px;
     }
 
+    .cardPaquete {
+        width: 100%;
+    }
+
+    .filaFormulario {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .textarea {
+        width: 100%;
+    }
+
+    .imagencamisa {
+        width: 100%;
+    }
+
+    .valorPalaImhg img {
+        width: 100%;
+    }
+
+    .imgGrande {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .titulo{
+        font-size: 16px;
+        width: 100%;
+    }
+    .infromacionAltimetria{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .carrusel{
+        width: 100%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
-    .galeria {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 190px;
-    }
-}
+
 
 @media (max-width: 600px) {
     .galeriaSec {
@@ -3275,5 +3692,31 @@ h1 span {
 @media (max-width: 480px) {
     .footerTop {
         grid-template-columns: 1fr;
+    }
+
+    .quetzal {
+        display: none;
+    }
+
+    .coyote {
+        display: none;
+    }
+
+    .containerTextosINoso .etiquetaO {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .containerTextosEtapas{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+        padding-top: 140px;
+    }
+    .containerTextosEtapas .etiquetaO{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
     }
 }
