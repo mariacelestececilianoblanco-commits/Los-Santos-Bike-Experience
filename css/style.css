@@ -3452,7 +3452,10 @@ h1 span {
     .actividadInvitado{
         width: 100%;
     }
-    
+    .imagenInvitado{
+        width: 200px;
+        height: 150px;
+    }
     #encabezadoTabla{
         display: none !important;
     }
@@ -3604,15 +3607,6 @@ h1 span {
         padding: 10px 5px;
         font-size: 11px;
     }
-
-    
-
-    .imagenInvitado {
-        width: 85px;
-        height: 110px;
-        grid-row: span 3;
-    }
-
     .horaInvitado,
     .nombreInvitado,
     .actividadInvitado {
