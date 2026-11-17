@@ -3434,6 +3434,32 @@ h1 span {
         flex-direction: column;
         text-align: center;
     }
+    .encabezadoTabla {
+        display: none !important;
+        opacity: 0 !important;
+    }
+    #contenidoFanZone{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .categoriasFanZone{
+        width: 90%;
+    }
+    .nombreInvitado,
+    .horaInvitado,
+    .actividadInvitado{
+        width: 100%;
+    }
+    
+    #encabezadoTabla{
+        display: none !important;
+    }
+    .filaFanZone{
+        width: 250px;
+    }
+
 }
 @media (max-width: 750px) {
     .gridConciertos {
@@ -3444,13 +3470,13 @@ h1 span {
     .tarjetaConcierto:nth-child(4) {
         grid-column: auto;
     }
-
-    .encabezadoTabla,
     .filaFanZone {
-        grid-template-columns: 90px 110px 1fr 1fr;
-        gap: 12px;
+        display: flex;
+        flex-direction: column;
     }
-
+    .encabezadoTabla{
+        display: none;
+    }
     .coyote1 {
         display: none;
     }
@@ -3500,6 +3526,24 @@ h1 span {
     .formualrionIn{
         width: 100%;
     }
+    
+    .otroLado{
+        text-align: center;
+    }
+    .cLugar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cLugar img{
+        height: 290px;
+        object-fit: cover;
+    }
+    .card2{
+        flex-direction: column-reverse;
+        display: flex;
+        text-align: center;
+    }
+    
 }
 @media (max-width: 650px) {
     .contenidoModalEquipo {
@@ -3561,18 +3605,7 @@ h1 span {
         font-size: 11px;
     }
 
-    .encabezadoTabla {
-        display: none;
-    }
-
-    .filaFanZone {
-        grid-template-columns: 85px 1fr;
-        gap: 10px;
-        margin-bottom: 20px;
-        background-color: rgba(255, 255, 255, 0.04);
-        padding: 10px;
-        border-radius: 6px;
-    }
+    
 
     .imagenInvitado {
         width: 85px;
